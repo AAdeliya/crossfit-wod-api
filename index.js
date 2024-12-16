@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.use("/api/workouts", workoutRouter);
 
 
+
 app.listen(PORT, () => { 
     console.log(`API is listening on port ${PORT}`); 
 });

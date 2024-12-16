@@ -1,12 +1,12 @@
 const DB = require("./db.json");
 const {saveToDatabase}  = require("./utils");
-//to make avaialble some fkiles we use require keyword
+//to make avaialble some files we use require keyword
 //DB - standard way for db
 
 const getAllWorkouts = () => {
   return DB.workouts;
 };
-
+ 
 const getOneWorkout = (workoutId) => {
   const workout = DB.workouts.find((workout) => workout.id === workoutId);
   if (!workout) {
@@ -16,8 +16,7 @@ const getOneWorkout = (workoutId) => {
 };
 
 const createNewWorkout = (newWorkout) => {
-  const isAlreadyAdded =
-    DB.workouts.findIndex((workout) => workout.name === newWorkout.name) > -1;
+  const isAlreadyAdded = DB.workouts.findIndex((workout) => workout.name === newWorkout.name) > -1;
   if (isAlreadyAdded) {
     return;
   }
