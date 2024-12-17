@@ -1,7 +1,7 @@
 const express = require("express");  //library
 
 const bodyParser = require("body-parser");
-const workoutRouter = require("./routes/workoutRoutes");
+const workoutRouter = require("./src/v1/routes/workoutRoutes");
 
 const app = express(); 
 const PORT = process.env.PORT || 3000; 
