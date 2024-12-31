@@ -13,4 +13,5 @@ app.use("/api/v1/workouts", v1WorkoutRouter);
 
 app.listen(PORT, () => {
   console.log(`API is listening on port ${PORT}`);
+  
 });
