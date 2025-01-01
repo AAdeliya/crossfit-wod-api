@@ -1,5 +1,6 @@
 const express = require("express");
 const workoutController = require("../../controllers/workoutController");
+
 const recordController = require("../../controllers/recordController");
 
 const router = express.Router();
